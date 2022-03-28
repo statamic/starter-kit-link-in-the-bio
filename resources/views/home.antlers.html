@@ -1,0 +1,32 @@
+<article class="max-w-2xl mx-auto py-6 py-10 relative z-10 px-4">
+    <div class="text-white text-center">
+        {{ if profile_image }}
+            <img class="block mx-auto rounded-full" src="{{ glide:profile_image square="192" }}" alt="{{ profile_name }} Profile Image" height="96" width="96">
+        {{ /if }}
+        <h1 class="font-bold mt-3">{{ profile_name }}</h1>
+    </div>
+    <section class="mt-6">
+    {{ if links }}
+        {{ links }}
+            <a href="{{ link }}" class="p-2 bg-white min-h-[54px] rounded flex items-center mb-5 font-semibold scale-100 hover:scale-[1.02]">
+                {{ if image }}
+                    <img class="absolute left-2 top-2 rounded" height="42" width="42" src="{{ glide:image width="84" height="84" }}" alt="Image for {{ title }}">
+                {{ /if }}
+                <div class="flex-1 px-14 text-center leading-tight">
+                    {{ title }}
+                </div>
+            </a>
+        {{ /links }}
+    {{ else }}
+        <div class="p-3 text-center bg-white rounded font-semibold">Welcome to Link in the Bio! <a href="{{ cp_url }}" class="underline">Sign in</a> to set up your site.</div>
+    {{ /if }}
+    </section>
+</article>
+
+<footer class="flex flex-wrap items-center justify-center space-x-4 px-4 pb-12 z-10 relative">
+    {{ foreach:social_links }}
+        <a href="{{ value }}" class="flex items-center justify-center h-6 w-6 scale-100 hover:scale-[1.1]" title="{{ label }}">
+            {{ svg src="assets/social/{key}" role="img" class="text-white" }}
+        </a>
+    {{ /foreach:social_links }}
+</footer>

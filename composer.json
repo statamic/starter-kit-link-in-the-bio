@@ -1,0 +1,9 @@
+{
+    "name": "my-vendor-name/starter-kit-link-in-the-bio",
+    "extra": {
+        "statamic": {
+            "name": "Starter Kit Link In The Bio",
+            "description": "Starter Kit Link In The Bio starter kit"
+        }
+    }
+}

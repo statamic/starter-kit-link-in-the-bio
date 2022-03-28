@@ -1,0 +1,14 @@
+export_paths:
+  - content
+  - resources/blueprints
+  - resources/css
+  - resources/views
+  - public/assets
+  - public/css
+  - public/favicon-16x16.png
+  - public/favicon-32x32.png
+  - public/favicon.ico
+  - package.json
+  - tailwind.config.js
+  - webpack.mix.js
+  - README.md

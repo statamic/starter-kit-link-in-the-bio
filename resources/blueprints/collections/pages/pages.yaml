@@ -1,0 +1,140 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: links
+        field:
+          max_items: 10
+          mode: default
+          create: true
+          collections:
+            - links
+          display: Links
+          type: entries
+          icon: entries
+          instructions: 'Create, edit, and delete your links.'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  theme:
+    display: Theme
+    fields:
+      -
+        handle: profile_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Profile Name'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: profile_image
+        field:
+          mode: list
+          container: assets
+          folder: images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Profile Image'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: background_image
+        field:
+          mode: list
+          container: assets
+          folder: backgrounds
+          restrict: true
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Background Image'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: background_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Background Color'
+          type: color
+          icon: color
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: link_background
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Link Background Color'
+          type: color
+          icon: color
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: link_text
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Link Text Color'
+          type: color
+          icon: color
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  social_links:
+    display: 'Social Links'
+    fields:
+      -
+        handle: social_links
+        field:
+          mode: keyed
+          keys:
+            Twitter: null
+            YouTube: null
+            TikTok: null
+            'Linked In': null
+          display: 'Social Links'
+          type: array
+          icon: array
+          instructions: 'Enter the **full URL** to each relevant network and the icons will be added automatically.'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+title: Pages

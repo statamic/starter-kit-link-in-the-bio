@@ -1,0 +1,7 @@
+title: Pages
+template: default
+layout: layout
+revisions: false
+route: '/'
+slugs: false
+sort_dir: asc
