@@ -88,36 +88,6 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
-      -
-        handle: link_background
-        field:
-          theme: classic
-          lock_opacity: false
-          default_color_mode: HEXA
-          color_modes:
-            - hex
-          display: 'Link Background Color'
-          type: color
-          icon: color
-          width: 50
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        handle: link_text
-        field:
-          theme: classic
-          lock_opacity: false
-          default_color_mode: HEXA
-          color_modes:
-            - hex
-          display: 'Link Text Color'
-          type: color
-          icon: color
-          width: 50
-          listable: hidden
-          instructions_position: above
-          read_only: false
   social_links:
     display: 'Social Links'
     fields:
@@ -126,10 +96,27 @@ sections:
         field:
           mode: keyed
           keys:
-            Twitter: null
-            YouTube: null
-            TikTok: null
-            'Linked In': null
+            apple_music: 'Apple Music'
+            behance: Behance
+            dribbble: Dribbble
+            email: Email
+            facebook: Facebook
+            github: Github
+            instagram: Instagram
+            linkedin: Linkedin
+            medium: Medium
+            pinterest: Pinterest
+            reddit: Reddit
+            skype: Skype
+            snapchat: Snapchat
+            soundcloud: Soundcloud
+            spotify: Spotify
+            stack_overflow: 'Stack Overflow'
+            tiktok: Tiktok
+            twitch: Twitch
+            twitter: Twitter
+            yelp: Yelp
+            youtube: YouTube
           display: 'Social Links'
           type: array
           icon: array

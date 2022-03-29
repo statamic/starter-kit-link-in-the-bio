@@ -1,5 +1,8 @@
 export_paths:
+  - app/Widgets
+  - app/Providers/AppServiceProvider.php
   - content
+  - config/statamic/cp.php
   - resources/blueprints
   - resources/css
   - resources/views
