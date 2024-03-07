@@ -24,9 +24,11 @@
 </article>
 
 <footer class="flex flex-wrap items-center justify-center space-x-4 px-4 pb-12 z-10 relative">
-    {{ foreach:social_links }}
-        <a href="{{ value }}" class="flex items-center justify-center h-6 w-6 scale-100 hover:scale-[1.1]" title="{{ label }}">
-            {{ svg src="assets/social/{key}" role="img" class="text-white" }}
-        </a>
-    {{ /foreach:social_links }}
+    {{ if social_links }}
+        {{ foreach:social_links }}
+            <a href="{{ value }}" class="flex items-center justify-center h-6 w-6 scale-100 hover:scale-[1.1]" title="{{ label }}">
+                {{ svg src="assets/social/{key}" role="img" class="text-white" }}
+            </a>
+        {{ /foreach:social_links }}
+    {{ /if }}
 </footer>
