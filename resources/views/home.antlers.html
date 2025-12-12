@@ -27,9 +27,9 @@
     {{ if social_links }}
         {{ foreach:social_links }}
             {{ if value }}
-            <a href="{{ value }}" class="flex items-center justify-center h-6 w-6 scale-100 hover:scale-[1.1]" title="{{ label }}">
-                {{ svg src="assets/social/{key}" role="img" class="text-white" }}
-            </a>
+                <a href="{{ value }}" class="flex items-center justify-center h-6 w-6 scale-100 hover:scale-[1.1]" title="{{ label }}">
+                    {{ svg src="assets/social/{key}" role="img" class="text-white" }}
+                </a>
             {{ /if }}
         {{ /foreach:social_links }}
     {{ /if }}
