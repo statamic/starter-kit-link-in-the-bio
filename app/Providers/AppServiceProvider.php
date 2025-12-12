@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider;
 use Statamic\Statamic;
 use Statamic\Facades\CP\Nav;
 
-
 class AppServiceProvider extends ServiceProvider
 {
     /**
