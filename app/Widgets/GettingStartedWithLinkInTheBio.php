@@ -2,6 +2,7 @@
 
 namespace App\Widgets;
 
+use Statamic\Facades\Entry;
 use Statamic\Widgets\Widget;
 
 class GettingStartedWithLinkInTheBio extends Widget
@@ -13,7 +14,7 @@ class GettingStartedWithLinkInTheBio extends Widget
      */
     public function html()
     {
-        $links = \Statamic\Facades\Entry::query()->where('collection', 'links')->count();
+        $links = Entry::query()->where('collection', 'links')->count();
 
         return view('widgets.getting-started', compact('links'));
     }
