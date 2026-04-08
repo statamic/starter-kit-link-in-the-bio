@@ -5,3 +5,7 @@ revisions: false
 route: '/'
 slugs: false
 sort_dir: asc
+inject:
+  seo:
+    title: '@seo:profile_name'
+    description: '@seo:summary'
